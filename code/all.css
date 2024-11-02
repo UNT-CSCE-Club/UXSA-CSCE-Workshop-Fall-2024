@@ -1,0 +1,115 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    padding-top: 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav a {
+    margin: 0 3rem;
+    text-decoration: none;
+    color: black;
+  }
+
+
+.all-cheeses {
+    padding: 2rem 6rem;
+}
+
+.all-cheeses h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-decoration: none;   
+}
+
+.cheese-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Remove underline from links */
+.cheese-item {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.cheese-item:hover {
+    transform: scale(1.05);
+}
+
+/* Cheese image styling */
+.cheese-item img {
+    width: 100%;
+    height: 300px;
+    transition: opacity 0.3s ease;
+    object-fit: cover; /* Ensures the image covers the entire box */
+    display: block;
+}
+
+/* Overlay effect */
+.cheese-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect: Show the image and hide the overlay */
+.cheese-item:hover img {
+    opacity: 1;
+}
+
+.cheese-item:hover .cheese-info {
+    opacity: 0; /* Hide the overlay on hover */
+}
+
+/* Cheese name styling */
+.cheese-name {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+}
+
+.cheese-rating {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-top: 5px;
+}

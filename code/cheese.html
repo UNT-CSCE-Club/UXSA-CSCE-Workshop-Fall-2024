@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Details - Super Awesome Cheeses</title>
+        <link rel="stylesheet" href="cheese.css" />
+        <script src="cheese.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">Super Awesome Cheeses</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="all.html">All</a>
+                <a href="#">Categories</a>
+            </nav>
+        </header>
+
+        <main class="cheese-details">
+            <div class="cheese-image">
+                <img id="cheeseImage" src="" alt="Cheese Image" />
+                <div class="image-overlay">
+                    <span id="cheeseMilk" class="badge"></span>
+                </div>
+            </div>
+
+            <div class="cheese-info">
+                <div class="cheese-summary">
+                    <h1 id="cheeseName"></h1>
+                    <p id="cheeseDescription" class="description"></p>
+                    <p id="cheeseCategory"></p>
+                    <div class="rating">
+                        <span id="cheeseRating"></span>
+                    </div>
+                </div>
+                <p class="price">
+                    <strong>Price:</strong> $<span id="cheesePrice"></span>
+                </p>
+                <div class="actions">
+                    <button class="button">Add to Cart</button>
+                    <button class="button">Buy Now</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

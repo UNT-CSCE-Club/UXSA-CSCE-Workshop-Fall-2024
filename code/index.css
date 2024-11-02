@@ -1,0 +1,132 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    padding-top: 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav a {
+    margin: 0 3rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+/* Hero section styling */
+.hero {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    position: relative;
+    width: 90%;
+    height: 400px;  
+    background-image: 
+        linear-gradient(to top, rgba(175, 114, 0, 0.8), rgba(255, 165, 0, 0)), 
+        url("https://img.freepik.com/free-vector/cheese-flat-colored-composition-various-pieces-cheese-with-fruit-snacks-wine-vector-illustration_1284-76778.jpg?t=st=1730518319~exp=1730521919~hmac=c2839d372380fca465ddcf3d8fb45e21e8d58da5443ac131989b9e7468b479a3&w=1380");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 45rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-overlay h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin: 0;
+    text-align: left;
+}
+
+  
+  /* Top Rated Cheeses section styling */
+  .top-rated {
+    padding: 2rem 6rem;
+    padding-top: 4rem;
+  }
+  
+  .top-rated h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cheese-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:2rem 0rem;
+}
+
+.cheese-item {
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.cheese-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire box */
+    display: block;
+}
+
+.cheese-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 165, 0, 0)); /* Semi-transparent background for readability */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+  
+}
+
+.cheese-name {
+    font-size: 1.5em;
+    margin: 0;
+    position: absolute;
+    bottom: 2rem;
+}
+
+
+.cheese-item:hover {
+  transform: scale(1.05);
+}
