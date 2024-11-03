@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        const response = await fetch("http://localhost:3000/top-rated");
+        const response = await fetch(
+            "https://uxsa-csce-workshop-api.onrender.com/top-rated"
+        );
         const cheeses = await response.json();
 
         const cheeseGrid = document.getElementById("cheeseGrid");

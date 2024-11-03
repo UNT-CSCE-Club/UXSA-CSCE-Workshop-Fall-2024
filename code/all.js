@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        const response = await fetch("http://localhost:3000/cheeses"); // Replace with your actual endpoint
+        const response = await fetch(
+            "https://uxsa-csce-workshop-api.onrender.com/cheeses"
+        ); // Replace with your actual endpoint
         const cheeses = await response.json();
 
         const cheeseGrid = document.getElementById("cheeseGrid");

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         try {
             // Fetch cheese data from the API
             const response = await fetch(
-                `http://localhost:3000/cheese/${cheeseId}`
+                `https://uxsa-csce-workshop-api.onrender.com/cheese/${cheeseId}`
             );
             const cheese = await response.json();
 
