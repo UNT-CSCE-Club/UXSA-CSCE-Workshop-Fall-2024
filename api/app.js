@@ -145,7 +145,6 @@ const cheeses = [
         price: 15.0,
     },
 ];
-
 app.get("/cheeses", (req, res) => {
     res.json(cheeses);
 });
