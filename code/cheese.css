@@ -6,8 +6,10 @@
   }
   
   body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Inter;
     color: black;
+    padding: 70px;
+    padding-top: 50px;
   }
   
   /* Header styling */
@@ -15,111 +17,250 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6rem;
-    padding-top: 2rem;
   }
   
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo-name{
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   
+  .nav{
+    width: 419px;
+    height: 28px;
+    flex-shrink: 0;
+    padding: 5px;
+    display: flex;
+    gap: 93px;
+  }
+
   .nav a {
-    margin: 0 3rem;
     text-decoration: none;
     color: black;
   }
- 
-  .cheese-details {
+
+  .search{
+    width: 365px;
+    height: 34px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    border-radius: 39px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 8px;
+  }
+
+  .search-box{
+    border: none;
+  }
+  
+  .other-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+/* Cheese details styling */
+.cheese-details {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
-    padding: 0 6rem;
+    gap: 40px;
+    padding-top: 113px ;
+    
 }
-
 .cheese-image {
     position: relative;
+    width: 623px;
+    height: 760px;
+    margin-right: 89px;
 }
-
 .cheese-image img {
     border-radius: 10px;
     object-fit: cover;
-    display: block;
-    width: 550px;
-    height: 700px;
+    width: 623px;
+    height: 760px;
 }
-
 .image-overlay {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 14px;
+    right: 15px;
     background: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
+    padding: 8px;
+    width: 51px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #FFF;
 }
 
 .cheese-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 4rem;
-}
-
-.cheese-summary {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
-    width: 800px;
+    max-width: 500px;
 }
 
 .cheese-info h1 {
-    font-size: 1.5em;
-    margin: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-.cheese-info .rating {
-    font-size: 1.2em;
-    background-color: lightgray;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.cheese-info .description {
-    font-size: 1em;
-    color: #666;
-}
-
-#cheeseCategory {
-    font-size: 1.2em;
-    background-color: lightgray;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.price {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-.actions {
+.rating-reviews {
+    padding-top: 22px;
     display: flex;
-    gap: 10px;
-    margin-top: 15px;
+    align-items: center;
+    gap: 15px;
 }
 
-.button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #333;
-    color: white;
+.reviews {
+    color: #BEBEBE;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.price{
+    padding-top: 18px;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.description {
+    padding-top: 12px;
+    width: 736px;
+    height: 95px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.category {
+    padding-top: 18px;
+    color: #FD921F;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#cheeseMilk{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* Separator styling */
+.separator {
+    width: 877px;
+    height: 3px;
+    background: #FD921F;
+    margin-top: 43px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-.button:hover {
-    background-color: #555;
+.button-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 56px;
+}
+
+.quantity-btn-container {
+    width: 228px;
+    height: 61px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    border: 1px solid #FD921F;
+    background: rgba(255, 255, 255, 0.00);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-btn {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    background-color: rgba(255, 212, 166, 0.60);
+    border-radius: 23px;
+    border: none;
+    font-size: 29px;
+    color: #FD921F;
+    margin: 8px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.quantity {
+    width: 33px;
+height: 28px;
+flex-shrink: 0;
+    color: #FD921F;
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+.add-to-cart {
+    width: 228px;
+height: 61px;
+flex-shrink: 0;
+border-radius: 36px;
+border: 1px solid #FD921F;
+background: rgba(255, 255, 255, 0.00);
+color: #FD921F;
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+.button{
+    border: none;
+    background-color: transparent;
 }

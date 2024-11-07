@@ -6,8 +6,10 @@
   }
   
   body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Inter;
     color: black;
+    padding: 70px;
+    padding-top: 50px;
   }
   
   /* Header styling */
@@ -15,118 +17,174 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6rem;
-    padding-top: 2rem;
   }
   
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo-name{
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   
+  .nav{
+    width: 419px;
+    height: 28px;
+    flex-shrink: 0;
+    padding: 5px;
+    display: flex;
+    gap: 93px;
+  }
+
   .nav a {
-    margin: 0 3rem;
     text-decoration: none;
     color: black;
   }
+
+  .search{
+    width: 365px;
+    height: 34px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    border-radius: 39px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 8px;
+  }
+
+  .search-box{
+    border: none;
+  }
   
+  .other-icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 /* Hero section styling */
 .hero {
     display: flex;
     justify-content: center;
-    margin: 1rem auto;
     position: relative;
-    width: 90%;
-    height: 400px;  
-    background-image: 
-        linear-gradient(to top, rgba(175, 114, 0, 0.8), rgba(255, 165, 0, 0)), 
+    width: 100%;
+    height: 473px;
+    background: 
+    linear-gradient(6deg, rgba(253, 146, 31, 0.60) 23.09%, rgba(255, 255, 255, 0.00) 89.12%), 
         url("https://img.freepik.com/free-vector/cheese-flat-colored-composition-various-pieces-cheese-with-fruit-snacks-wine-vector-illustration_1284-76778.jpg?t=st=1730518319~exp=1730521919~hmac=c2839d372380fca465ddcf3d8fb45e21e8d58da5443ac131989b9e7468b479a3&w=1380");
     background-size: cover;
     background-position: center;
     border-radius: 30px;
+    margin-top: 145px;
 }
 
 .hero-overlay {
     position: absolute;
-    bottom: 20px; 
-    left: 20px; 
-    width: auto;
-    padding: 10px 20px;
+    bottom: 26px;
+    left: 24px; 
     border-radius: 5px;
-    width: 45rem;
+    width: 633px;
+    height: 144px;
+    flex-shrink: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
 .hero-overlay h1 {
     color: white;
-    font-size: 3.5rem;
     margin: 0;
     text-align: left;
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
   
   /* Top Rated Cheeses section styling */
-  .top-rated {
-    padding: 2rem 6rem;
-    padding-top: 4rem;
-  }
-  
   .top-rated h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    padding-top: 79px;
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   
   .cheese-grid {
+    padding-top: 43px;
     display: flex;
-    gap: 20px;
+    gap: 89px;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:2rem 0rem;
 }
 
-.cheese-item {
-    width: 500px;
-    height: 600px;
+  .cheese-item {
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden;   
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     position: relative;
     transition: transform 0.2s;
-}
+    width: 470px;
+    height: 688px;
+    border-radius: 22px;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 28.88%, #FD921F 100%);
+  }
 
-.cheese-item img {
+  .cheese-item img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures the image covers the entire box */
     display: block;
-}
+  }
 
 .cheese-info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 165, 0, 0)); /* Semi-transparent background for readability */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2rem;
-  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 28.88%, #FD921F 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to bottom */
+  padding: 2rem;
+  height: 40%;
+  box-sizing: border-box;
 }
 
 .cheese-name {
-    font-size: 1.5em;
-    margin: 0;
-    position: absolute;
-    bottom: 2rem;
+  margin: 0;
+  text-align: left;
+  padding-bottom: 10px; /* Space between name and description */
+  color: #FFF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-
-.cheese-item:hover {
-  transform: scale(1.05);
+.cheese-description {
+  margin: 0;
+  text-align: left;
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }

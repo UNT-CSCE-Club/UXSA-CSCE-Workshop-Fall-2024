@@ -24,8 +24,13 @@ document.addEventListener("DOMContentLoaded", async () => {
             cheeseName.classList.add("cheese-name");
             cheeseName.textContent = cheese.name;
 
+            const cheeseDescription = document.createElement("p");
+            cheeseDescription.classList.add("cheese-description");
+            cheeseDescription.textContent = cheese.description;
+
             // Append elements to build the card
             cheeseInfo.appendChild(cheeseName);
+            cheeseInfo.appendChild(cheeseDescription);
             cheeseItem.appendChild(cheeseImage);
             cheeseItem.appendChild(cheeseInfo);
             cheeseGrid.appendChild(cheeseItem);
