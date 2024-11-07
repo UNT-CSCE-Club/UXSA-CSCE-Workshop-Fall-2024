@@ -49,6 +49,10 @@
     color: black;
   }
 
+  .nav a:hover {
+    color: #FD921F;
+  }
+
   .search{
     width: 365px;
     height: 34px;
